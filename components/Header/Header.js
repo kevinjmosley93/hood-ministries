@@ -8,8 +8,8 @@ const Header = () => {
         sticky='top'
         collapseOnSelect
         expand='md'
-        bg='dark'
-        variant='dark'>
+        variant='dark'
+        style={{ backgroundColor: '#1b4965', fontWeight: '700' }}>
         <Container className='d-flex flex-md-row'>
           <Navbar.Brand href='/'>I am H.O.O.D</Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />

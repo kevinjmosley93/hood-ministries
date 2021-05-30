@@ -11,9 +11,12 @@ body {
 }
 .btn {
   text-decoration: none;
+  background-color: #5fa8d3;
+  border-color: #5fa8d3;
+  font-weight: 700;
 }
 .bg-overlay {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url('../public/will&fam.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,6 +35,5 @@ body {
   font-size: xx-large;
 }
 a {
-  color: #fff;
   text-decoration: none;
 }

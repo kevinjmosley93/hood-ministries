@@ -18,16 +18,14 @@ export const Hero = () => {
               <Button
                 as='a'
                 href='/about'
-                variant='info'
-                className=' btn-lg px-4 gap-3'>
+                className=' btn-lg px-4 text-dark gap-3'>
                 Our Why
               </Button>
               <Button
                 as='a'
-                variant='outline-info'
                 target='_blank'
                 href='https://www.paypal.com/donate/?hosted_button_id=GE7NQ7TWYQETU'
-                className=' btn-lg px-4'>
+                className=' btn-lg text-dark px-4'>
                 Donate
               </Button>
             </div>

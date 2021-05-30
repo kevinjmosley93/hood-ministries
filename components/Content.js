@@ -14,11 +14,10 @@ export default function Content() {
     <>
       <Hero />
       <EventPrev />
+      <Events />
       <ImgText />
       <Services />
-      <Events />
       <Blog />
-      <Sermons />
       <Subscribe />
     </>
   )

@@ -1,7 +1,8 @@
 import React from 'react'
+import { Sermons } from '../components/Sermons'
 
 const worship = () => {
-  return <div>this is worship page</div>
+  return <Sermons />
 }
 
 export default worship

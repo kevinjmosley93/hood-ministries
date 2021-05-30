@@ -15,7 +15,7 @@ export const ImgText = () => {
           />
         </div>
         <div className='col-md-6'>
-          <h2 className=' fw-bold lh-1 py-3 mb-3 border-bottom'>Our Purpose</h2>
+          <h2 className=' fw-bold lh-1 p-3 mb-3 shadow-sm'>Our Purpose</h2>
           <p className='lead'>
             A non for profit, charitable, religious organization for the
             purposes of the people to provide services to help the poor, needy,

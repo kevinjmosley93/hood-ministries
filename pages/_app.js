@@ -3,7 +3,8 @@ import Head from 'next/head'
 import { Footer } from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import '../styles/globals.css'
-// import '../styles/reset.css'
+import '../styles/blog.css'
+import '../styles/subscribe.css'
 
 function MyApp({ Component, pageProps }) {
   return (
