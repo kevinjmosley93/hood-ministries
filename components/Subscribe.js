@@ -1,13 +1,6 @@
 import React from 'react'
-import { Button, Card, Col, Form, Row } from 'react-bootstrap'
+import { Button, Card, Col, Form, Row, Alert, Container } from 'react-bootstrap'
 
 export const Subscribe = () => {
-  return (
-    <Card
-      style={{
-        padding: '3rem'
-      }}>
-      this is subscribe
-    </Card>
-  )
+  return <div>this is subscribe</div>
 }

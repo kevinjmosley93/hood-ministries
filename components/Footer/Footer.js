@@ -1,20 +1,21 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 export const Footer = () => {
   return (
-    <footer className='bg-dark text-light py-4 mt-auto'>
+    <footer className='bg-dark  text-light py-4 mt-auto'>
       <Container>
-        <Row>
+        <Row className='mb-5'>
           <Col sm={6} md={3}>
-            <h5>ABOUT THE CHURCH</h5>
+            <h1 classname='fw-bold mb-5'>ABOUT THE CHURCH</h1>
             <p>
               We strive to help those who feel like they have no one else. I Am
               (H.O.O.D) Helping Others Obtain Destiny!
             </p>
           </Col>
           <Col sm={6} md={3}>
-            <h5>IMPORTANT LINKS</h5>
+            <h1 classname='fw-bold mb-5'>IMPORTANT LINKS</h1>
             <ul className='footer-links'>
               <li>
                 <a href='#'>About Us</a>
@@ -40,8 +41,8 @@ export const Footer = () => {
             </ul>
           </Col>
           <Col sm={6} md={3}>
-            <h5>LOCATION</h5>
-            <p>
+            <h1 classname='fw-bold mb-5'>LOCATION</h1>
+            <div>
               {' '}
               <div>Helping Others Obtain Destiny LLC</div>
               <div>
@@ -52,24 +53,29 @@ export const Footer = () => {
               <span>
                 <a href='#'>info@helpingthehood.com</a>
               </span>
-            </p>
+            </div>
           </Col>
           <Col sm={6} md={3}>
-            <h5>CONNECT</h5>
-            <div className='social-icons'>
+            <h1 classname='fw-bold mb-5'>CONNECT</h1>
+            <div className='social-icons d-flex flex-row justify-content-between'>
               <a href='#'>
-                <img src='images/fb-icon.png' alt='social' />
+                <FaFacebookF />
               </a>{' '}
-              <a href='#'>
-                <img src='images/tw-icon.png' alt='social' />
+              <a
+                target='_blank'
+                href='https://www.instagram.com/helpingthehood'>
+                <FaInstagram />
               </a>{' '}
+              <a target='_blank' href='https://twitter.com/helpingthehood'>
+                <FaTwitter />
+              </a>
               <a href='#'>
-                <img src='images/in-icon.png' alt='social' />
+                <FaYoutube />
               </a>
             </div>
           </Col>
         </Row>
-        <p className='text-center text-light pt-4'>
+        <p className='text-center text-light pt-6 mb-0'>
           {new Date().getFullYear()} All Rights Reserved | I am (H.O.O.D)
           Helping Others Obtain Destiny™
         </p>
