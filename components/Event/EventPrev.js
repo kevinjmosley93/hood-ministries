@@ -1,10 +1,11 @@
 import React from 'react'
-import { Button, Card } from 'react-bootstrap'
+import { Button, Card, Container } from 'react-bootstrap'
 
 export const EventPrev = () => {
   return (
-    <div>
+    <Container>
       <Card
+        className='shadow-lg mt-4'
         style={{
           height: '140px'
         }}>
@@ -13,7 +14,7 @@ export const EventPrev = () => {
             Upcoming Event
           </Card.Subtitle>
           <div className='d-flex flex-row pt-4'>
-            <Card.Title style={{ fontSize: '1rem', paddingLeft: '18px' }}>
+            <Card.Title style={{ fontSize: '1rem' }}>
               Youth Explosion - July 10th, 2021 | Columbus, OH{' '}
             </Card.Title>
             <Button
@@ -27,6 +28,6 @@ export const EventPrev = () => {
           </div>
         </Card.Body>
       </Card>
-    </div>
+    </Container>
   )
 }

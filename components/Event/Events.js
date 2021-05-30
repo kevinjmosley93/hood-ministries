@@ -8,7 +8,7 @@ export const Events = () => {
       <div className='row mb-2'>
         <div className='col-md-6'>
           <div
-            className='row g-0 overflow-hidden flex-md-row mb-4 shadow-lg '
+            className='row g-0 flex-md-row mb-4 shadow-lg '
             style={{ height: '150px' }}>
             <Card className='col p-4 d-flex flex-column position-static'>
               <Card.Title className='mb-0'>Sunday Service</Card.Title>
@@ -23,7 +23,7 @@ export const Events = () => {
         </div>
         <div className='col-md-6'>
           <div
-            className='row g-0 overflow-hidden flex-md-row mb-4 shadow-lg'
+            className='row g-0 flex-md-row mb-4 shadow-lg'
             style={{ height: '150px' }}>
             <Card className='col p-4 d-flex flex-column position-static'>
               <Card.Title className='mb-0'>

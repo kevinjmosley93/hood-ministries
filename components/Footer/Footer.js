@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 export const Footer = () => {
   return (
     <footer style={{ backgroundColor: '#1b4965' }}>
-      <Container className=' text-light py-4 mt-auto'>
+      <Container className=' text-light py-4 pt-5'>
         <Row className='mb-5'>
           <Col sm={6} md={3}>
             <h1 classname='fw-bold mb-5'>ABOUT THE CHURCH</h1>
@@ -79,8 +79,7 @@ export const Footer = () => {
           style={{
             height: 'auto',
             margin: '0 auto',
-            fontWeight: '700',
-            backgroundColor: '#235573'
+            fontWeight: '700'
           }}>
           <p className='text-center py-3 text-light mb-0'>
             {new Date().getFullYear()} All Rights Reserved | I am (H.O.O.D)
