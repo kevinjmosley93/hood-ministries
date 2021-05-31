@@ -45,10 +45,10 @@ export const Events = () => {
         as='a'
         href='/events'
         variant='info'
-        size='sm'
+        size='lg'
         style={{
           margin: '0 auto',
-          display: 'inline-block'
+          display: 'block'
         }}>
         View All Events
       </Button>

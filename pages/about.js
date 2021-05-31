@@ -1,5 +1,6 @@
 import React from 'react'
+import About from '../components/About'
 
 export default function about() {
-  return <div>this is about page</div>
+  return <div>{/* <About /> */}this is about</div>
 }
