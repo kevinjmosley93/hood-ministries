@@ -3,13 +3,16 @@ import { Button, Container } from 'react-bootstrap'
 
 export default function about() {
   return (
-    <div className='bg-overlay'>
-      <Container>
+    <>
+      <div className='bg-overlay'>
         <div className='px-4 py-5 my-5 text-center'>
           <h1 className='display-5 fw-bold'>About Us</h1>
         </div>
-
-        <p style={{ textAlign: 'center' }}>
+      </div>
+      <Container
+        className='my-5'
+        style={{ backgroundColor: '#cae9ff', padding: '3rem' }}>
+        <p style={{ textAlign: 'center', marginTop: '3rem' }}>
           <img
             src='https://cdn.shopify.com/s/files/1/0527/8292/3966/files/lilwill_380x380.jpg?v=1612315257'
             alt=''
@@ -106,6 +109,6 @@ export default function about() {
           </a>
         </p>
       </Container>
-    </div>
+    </>
   )
 }

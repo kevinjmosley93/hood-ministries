@@ -3,7 +3,13 @@ import { Button, Card, Container } from 'react-bootstrap'
 
 export const Events = () => {
   return (
-    <Container>
+    <Container
+      fluid
+      style={{
+        backgroundColor: '#cae9ff',
+        padding: '3rem',
+        marginTop: '2rem'
+      }}>
       <h2 className='p-2 mb-4 mt-5 fw-bold lh-1 shadow-sm '>Recent Events</h2>
       <div className='row mb-2'>
         <div className='col-md-6'>
