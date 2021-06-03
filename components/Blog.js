@@ -6,10 +6,10 @@ const Blog = () => {
   return (
     <Container>
       <h2 className='p-2 mb-4 mt-5 fw-bold lh-1 shadow-sm '>Blog</h2>
-      <div class='row'>
-        <div class='col-lg-4'>
-          <div class='blog-grid'>
-            <div class='blog-img'>
+      <div className='row'>
+        <div className='col-lg-4'>
+          <div className='blog-grid'>
+            <div className='blog-img'>
               <a href='/blog'>
                 <Image
                   height={280}
@@ -20,7 +20,7 @@ const Blog = () => {
                 />
               </a>
             </div>
-            <div class='blog-info'>
+            <div className='blog-info'>
               <h5>
                 <a href='/blog'>Prison minitries are the way</a>
               </h5>
@@ -28,18 +28,18 @@ const Blog = () => {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod.
               </p>
-              <div class='btn-bar'>
-                <a href='/blog' class='px-btn-arrow'>
+              <div className='btn-bar'>
+                <a href='/blog' className='px-btn-arrow'>
                   <span>Read More</span>
-                  <i class='arrow'></i>
+                  <i className='arrow'></i>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div class='col-lg-4'>
-          <div class='blog-grid'>
-            <div class='blog-img'>
+        <div className='col-lg-4'>
+          <div className='blog-grid'>
+            <div className='blog-img'>
               <a href='/blog'>
                 <Image
                   height={280}
@@ -50,7 +50,7 @@ const Blog = () => {
                 />
               </a>
             </div>
-            <div class='blog-info'>
+            <div className='blog-info'>
               <h5>
                 <a href='/blog'>God wants you to help your neighbors</a>
               </h5>
@@ -58,18 +58,18 @@ const Blog = () => {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod.
               </p>
-              <div class='btn-bar'>
-                <a href='/blog' class='px-btn-arrow'>
+              <div className='btn-bar'>
+                <a href='/blog' className='px-btn-arrow'>
                   <span>Read More</span>
-                  <i class='arrow'></i>
+                  <i className='arrow'></i>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div class='col-lg-4'>
-          <div class='blog-grid'>
-            <div class='blog-img'>
+        <div className='col-lg-4'>
+          <div className='blog-grid'>
+            <div className='blog-img'>
               <a href='/blog'>
                 <Image
                   height={280}
@@ -80,7 +80,7 @@ const Blog = () => {
                 />
               </a>
             </div>
-            <div class='blog-info'>
+            <div className='blog-info'>
               <h5>
                 <a href='/blog'>Teach the youth while they are young</a>
               </h5>
@@ -88,10 +88,10 @@ const Blog = () => {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod.
               </p>
-              <div class='btn-bar'>
-                <a href='/blog' class='px-btn-arrow'>
+              <div className='btn-bar'>
+                <a href='/blog' className='px-btn-arrow'>
                   <span>Read More</span>
-                  <i class='arrow'></i>
+                  <i className='arrow'></i>
                 </a>
               </div>
             </div>

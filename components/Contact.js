@@ -5,67 +5,67 @@ export const Contact = () => {
   return (
     <>
       <Container className='my-5'>
-        <div class='row'>
-          <div class='col-12 col-sm-4'>
-            <div class='card bg-light mb-3'>
+        <div className='row'>
+          <div className='col-12 col-sm-4'>
+            <div className='card bg-light mb-3'>
               <div
                 style={{ backgroundColor: '#1B4965' }}
-                class='card-header text-white text-uppercase'>
-                <i class='fa fa-home'></i> Address
+                className='card-header text-white text-uppercase'>
+                <i className='fa fa-home'></i> Address
               </div>
-              <div class='card-body'>
+              <div className='card-body'>
                 <p>1951 W 21st St</p>
                 <p>Broadview, IL 60155</p>
                 <p>Email : contact@helpingthehood.com</p>
               </div>
             </div>
           </div>
-          <div class='col'>
-            <div class='card'>
+          <div className='col'>
+            <div className='card'>
               <div
                 style={{ backgroundColor: '#1B4965' }}
-                class='card-header text-white'>
-                <i class='fa fa-envelope'></i> Contact us.
+                className='card-header text-white'>
+                <i className='fa fa-envelope'></i> Contact us.
               </div>
-              <div class='card-body'>
+              <div className='card-body'>
                 <form>
-                  <div class='form-group'>
+                  <div className='form-group'>
                     <label for='name'>Name</label>
                     <input
                       type='text'
-                      class='form-control'
+                      className='form-control'
                       id='name'
                       aria-describedby='emailHelp'
                       placeholder='Enter name'
                       required
                     />
                   </div>
-                  <div class='form-group'>
+                  <div className='form-group'>
                     <label for='email'>Email address</label>
                     <input
                       type='email'
-                      class='form-control'
+                      className='form-control'
                       id='email'
                       aria-describedby='emailHelp'
                       placeholder='Enter email'
                       required
                     />
-                    <small id='emailHelp' class='form-text text-muted'>
+                    <small id='emailHelp' className='form-text text-muted'>
                       We'll never share your email with anyone else.
                     </small>
                   </div>
-                  <div class='form-group'>
+                  <div className='form-group'>
                     <label for='message'>Message</label>
                     <textarea
-                      class='form-control'
+                      className='form-control'
                       id='message'
                       rows='6'
                       required></textarea>
                   </div>
-                  <div class='mx-auto'>
+                  <div className='mx-auto'>
                     <button
                       type='submit'
-                      class='btn btn-primary text-dark text-right mt-3'>
+                      className='btn btn-primary text-dark text-right mt-3'>
                       Submit
                     </button>
                   </div>
