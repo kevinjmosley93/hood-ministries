@@ -9,10 +9,8 @@ export default function about() {
           <h1 className='display-5 fw-bold'>About Us</h1>
         </div>
       </div>
-      <Container
-        className='my-5'
-        style={{ backgroundColor: '#cae9ff', padding: '3rem' }}>
-        <p style={{ textAlign: 'center', marginTop: '3rem' }}>
+      <Container className='py-5'>
+        <p style={{ textAlign: 'center' }}>
           <img
             src='https://cdn.shopify.com/s/files/1/0527/8292/3966/files/lilwill_380x380.jpg?v=1612315257'
             alt=''
@@ -26,7 +24,7 @@ export default function about() {
             </em>
           </strong>
         </p>
-        <p style={{ textAlign: 'left' }}>
+        <p>
           William J Woods is just another kid from Chicago, literally. In his
           youth he has lived and worked on all sides of the city. Working as a
           manager for Foot Locker, GameStop, and sales consultant at  several 

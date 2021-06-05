@@ -10,7 +10,7 @@ export const Subscribe = () => {
         marginTop: '2rem'
       }}>
       <Container fluid className='mt-5 row'>
-        <h2 className='p-2 mb-4 mt-5 fw-bold lh-1 shadow-sm '>Subscribe</h2>
+        <h2 className='p-2 mb-4 mt-5 fw-bold lh-1 border-bottom'>Subscribe</h2>
         <div className='col-xl-10 w-100'>
           <div className='card shadow-lg border-0'>
             <div className='card-body p-0'>

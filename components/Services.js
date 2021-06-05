@@ -10,7 +10,7 @@ export const Services = () => {
         marginTop: '2rem'
       }}>
       <Container className='px-4 py-5' id='hanging-icons'>
-        <h2 className='p-2  fw-bold lh-1 shadow-sm'>Our Services</h2>
+        <h2 className='p-2  fw-bold lh-1 border-bottom'>Our Services</h2>
         <div className='row g-4 py-5 row-cols-1 row-cols-lg-3'>
           <div className='col d-flex align-items-start'>
             <div className='icon-square bg-light text-dark flex-shrink-0 me-3'></div>
