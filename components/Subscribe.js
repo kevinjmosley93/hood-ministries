@@ -3,14 +3,11 @@ import { Button, Card, Col, Form, Row, Alert, Container } from 'react-bootstrap'
 
 export const Subscribe = () => {
   return (
-    <div
-      style={{
-        backgroundColor: '#cae9ff',
-        padding: '3rem',
-        marginTop: '2rem'
-      }}>
-      <Container fluid className='mt-5 row'>
-        <h2 className='p-2 mb-4 mt-5 fw-bold lh-1 border-bottom'>Subscribe</h2>
+    <>
+      <h2 className='p-2 mb-4 mt-5 fw-bold lh-1 border-bottom container'>
+        Subscribe
+      </h2>
+      <Container className='mx-auto mb-5 row'>
         <div className='col-xl-10 w-100'>
           <div className='card shadow-lg border-0'>
             <div className='card-body p-0'>
@@ -58,6 +55,6 @@ export const Subscribe = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </>
   )
 }

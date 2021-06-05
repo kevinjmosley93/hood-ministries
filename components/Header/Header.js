@@ -9,9 +9,17 @@ const Header = () => {
         collapseOnSelect
         expand='md'
         variant='dark'
-        style={{ backgroundColor: '#1b4965', fontWeight: '700' }}>
+        style={{ backgroundColor: '#1b4965', fontWeight: '700', padding: '0' }}>
         <Container className='d-flex flex-md-row'>
-          <Navbar.Brand href='/'>I am H.O.O.D</Navbar.Brand>
+          <Navbar.Brand href='/'>
+            <img
+              style={{ objectFit: 'contain' }}
+              width='150px'
+              height='85px'
+              alt='I AM H.O.O.D'
+              src='https://i.imgur.com/PL0L0Nw.png'
+            />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='ms-auto text-center d-flex flex-md-row justify-content-around'>
