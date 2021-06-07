@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Blog = () => {
   return (
-    <Container>
+    <Container className='px-4'>
       <h2 className='p-2 mb-4 mt-5 fw-bold lh-1 border-bottom'>Blog</h2>
       <div className='row'>
         <div className='col-lg-4'>

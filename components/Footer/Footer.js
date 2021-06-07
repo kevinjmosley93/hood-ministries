@@ -8,14 +8,18 @@ export const Footer = () => {
       <Container className=' text-light py-4 pt-5'>
         <Row className='mb-5'>
           <Col sm={6} md={3}>
-            <h1 classname='fw-bold mb-5'>ABOUT THE CHURCH</h1>
+            <h1 id='footer__heading' classname='fw-bold mb-5'>
+              ABOUT THE CHURCH
+            </h1>
             <p>
               We strive to help those who feel like they have no one else. I Am
               (H.O.O.D) Helping Others Obtain Destiny!
             </p>
           </Col>
           <Col sm={6} md={3}>
-            <h1 classname='fw-bold mb-5'>IMPORTANT LINKS</h1>
+            <h1 id='footer__heading' classname='fw-bold mb-5'>
+              IMPORTANT LINKS
+            </h1>
             <ul className='footer-links'>
               <li>
                 <a href='#'>About Us</a>
@@ -41,7 +45,9 @@ export const Footer = () => {
             </ul>
           </Col>
           <Col sm={6} md={3}>
-            <h1 classname='fw-bold mb-5'>LOCATION</h1>
+            <h1 id='footer__heading' classname='fw-bold mb-5'>
+              LOCATION
+            </h1>
             <div>
               {' '}
               <div>Helping Others Obtain Destiny LLC</div>
@@ -56,7 +62,9 @@ export const Footer = () => {
             </div>
           </Col>
           <Col sm={6} md={3}>
-            <h1 classname='fw-bold mb-5'>CONNECT</h1>
+            <h1 id='footer__heading' classname='fw-bold mb-5'>
+              CONNECT
+            </h1>
             <div className='social-icons d-flex flex-row justify-content-between'>
               <a href='#'>
                 <FaFacebookF />

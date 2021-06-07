@@ -1,10 +1,15 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
+import { VertModal } from './Modal'
 
 export const Sermons = () => {
+  const [modalShow, setModalShow] = React.useState(false)
+
   return (
     <Container>
       <h3 className='border-bottom pb-2 mt-3'>Sermons & Outreach</h3>
+
+      {/* <VertModal show={modalShow} onHide={() => setModalShow(false)} /> */}
       <div className='album py-3'>
         <div className='container'>
           <div className='row'>
@@ -23,7 +28,10 @@ export const Sermons = () => {
                   </p>
                   <div className='d-flex justify-content-between align-items-center'>
                     <div className='btn-group'>
-                      <button type='button' className='btn btn-sm btn-info'>
+                      <button
+                        type='button'
+                        onClick={() => setModalShow(true)}
+                        className='btn btn-sm btn-info'>
                         View
                       </button>
                     </div>
@@ -229,10 +237,10 @@ export const Sermons = () => {
           </div>
         </div>
       </div>
-      <div className='d-flex flex-row justify-content-around mx-auto my-3'>
+      {/* <div className='d-flex flex-row justify-content-around mx-auto my-3'>
         <a className='btn btn-info shadow-lg'>Last Page</a>
         <a className='btn btn-info shadow-lg'>Next Page</a>
-      </div>
+      </div> */}
     </Container>
   )
 }

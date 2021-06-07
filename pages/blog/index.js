@@ -63,7 +63,7 @@ const index = () => {
                   </li>
                 </ol>
               </div>
-
+              {/* 
               <div className='p-4 shadow-lg mt-3'>
                 <h4 className='fst-italic'>Elsewhere</h4>
                 <ol className='list-unstyled'>
@@ -77,7 +77,7 @@ const index = () => {
                     <a href='#'>Facebook</a>
                   </li>
                 </ol>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className='col-md-8'>
@@ -147,10 +147,10 @@ const index = () => {
                   </div>
                 </div>
               </div>
-              <div className='d-flex flex-row justify-content-around mx-auto'>
+              {/* <div className='d-flex flex-row justify-content-around mx-auto'>
                 <a className='btn btn-info shadow-lg'>Last Page</a>
                 <a className='btn btn-info shadow-lg'>Next Page</a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

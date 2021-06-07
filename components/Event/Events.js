@@ -58,7 +58,7 @@ export const Events = () => {
                 </ol>
               </div>
 
-              <div className='p-4 shadow-lg mt-3'>
+              {/* <div className='p-4 shadow-lg mt-3'>
                 <h4 className='fst-italic'>Elsewhere</h4>
                 <ol className='list-unstyled'>
                   <li>
@@ -71,7 +71,7 @@ export const Events = () => {
                     <a href='#'>Facebook</a>
                   </li>
                 </ol>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className='col-md-8'>

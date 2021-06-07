@@ -6,8 +6,8 @@ export const Contact = () => {
     <>
       <Container className='my-5'>
         <div className='row'>
-          <div className='col-12 col-sm-4'>
-            <div className='card bg-light mb-3'>
+          <div className='col-md-4'>
+            <div className='card mb-3'>
               <div
                 style={{ backgroundColor: '#1B4965' }}
                 className='card-header text-white text-uppercase'>
@@ -16,11 +16,23 @@ export const Contact = () => {
               <div className='card-body'>
                 <p>1951 W 21st St</p>
                 <p>Broadview, IL 60155</p>
-                <p>Email : contact@helpingthehood.com</p>
+              </div>
+            </div>
+            <div className='card mb-3'>
+              <div
+                style={{ backgroundColor: '#1B4965' }}
+                className='card-header text-white text-uppercase'>
+                <i className='fa fa-home'></i> Contact Info
+              </div>
+              <div className='card-body'>
+                <p>Email: contact@helpingthehood.com</p>
+
+                <p>Phone #: (708) 998 - 6176</p>
               </div>
             </div>
           </div>
-          <div className='col'>
+
+          <div className='col-md-8'>
             <div className='card'>
               <div
                 style={{ backgroundColor: '#1B4965' }}

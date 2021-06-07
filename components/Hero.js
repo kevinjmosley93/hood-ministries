@@ -14,7 +14,7 @@ export const Hero = () => {
               We want to help any and everyone in the community find their
               destiny.
             </p>
-            <div className='d-grid gap-2 d-sm-flex mt-3 justify-content-sm-center'>
+            <div className='d-grid gap-3 d-sm-flex mt-3 justify-content-sm-center'>
               <Button
                 as='a'
                 variant='info'
