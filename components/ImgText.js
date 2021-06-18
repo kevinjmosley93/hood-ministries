@@ -1,12 +1,13 @@
 import React from 'react'
+import Image from 'next/image'
 
 export const ImgText = () => {
   return (
     <div className='container my-5  px-4'>
-      <div className='row flex-lg-row-reverse align-items-center g-5 py-3'>
-        <div className='col-md-6'>
-          <h2 className=' fw-bold lh-1 p-3 mb-3 border-bottom'>Our Purpose</h2>
-          <p className='lead'>
+      <h2 className=' fw-bold lh-1 p-3 mb-3 border-bottom'>Our Purpose</h2>
+      <div className='row justify-content-between align-items-center'>
+        <div className='col-md-7 g-4'>
+          <p className='lead text-center'>
             A non for profit, charitable, religious organization for the
             purposes of the people to provide services to help the poor, needy,
             middle-class, and broken families in neighborhoods around the world.
@@ -20,14 +21,14 @@ export const ImgText = () => {
             Others Obtain Destiny.
           </p>
         </div>
-        <div className='col-10 col-sm-8 col-md-6'>
-          <img
-            src='will.jpg'
-            className='d-block mx-lg-auto img-fluid rounded'
+        <div className='col-md-5 '>
+          <Image
+            style={{ objectFit: 'cover' }}
+            src='/will.jpg'
+            className='rounded'
             alt='pastor-will-img'
-            width='500'
-            height='250'
-            loading='lazy'
+            width={560}
+            height={470}
           />
         </div>
       </div>
