@@ -28,7 +28,10 @@ body {
 .footer-links {
   list-style-type: none;
 }
-.footer-links a:hover {
+a {
+  color: #fff;
+}
+a:hover {
   color: #0dcaf0;
 }
 .social-icons {

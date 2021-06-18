@@ -1,6 +1,10 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { VertModal } from './Modal'
+import sermon from '../public/sermon.mp4'
+import sermon2 from '../public/sermon2.mp4'
+import sermon3 from '../public/sermon3.mp4'
+import sermon4 from '../public/sermon4.mp4'
 
 export const Sermons = () => {
   const [modalShow, setModalShow] = React.useState(false)
@@ -10,229 +14,45 @@ export const Sermons = () => {
       <h3 className='border-bottom pb-2 mt-3'>Sermons & Outreach</h3>
 
       {/* <VertModal show={modalShow} onHide={() => setModalShow(false)} /> */}
-      <div className='album py-3'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-4'>
-              <div className='card mb-4 box-shadow'>
-                <img
-                  className='card-img-top'
-                  src='http://placehold.jp/150x100.png'
-                  alt='Card image cap'
+      <div className='album py-5'>
+        <div className='container p-0'>
+          <div className='row justify-content-between container'>
+            <div className='col-md-3'>
+              <video style={{ width: '100%', height: '100%' }} controls>
+                <source
+                  style={{ width: '100%', height: '100%' }}
+                  src={sermon}
+                  type='video/mp4'
                 />
-                <div className='card-body'>
-                  <p className='card-text'>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div className='d-flex justify-content-between align-items-center'>
-                    <div className='btn-group'>
-                      <button
-                        type='button'
-                        onClick={() => setModalShow(true)}
-                        className='btn btn-sm btn-info'>
-                        View
-                      </button>
-                    </div>
-                    <small className='text-muted'>9 mins</small>
-                  </div>
-                </div>
-              </div>
+              </video>
             </div>
-            <div className='col-md-4'>
-              <div className='card mb-4 box-shadow'>
-                <img
-                  className='card-img-top'
-                  src='http://placehold.jp/150x100.png'
-                  alt='Card image cap'
+            <div className='col-md-3'>
+              <video style={{ width: '100%', height: '100%' }} controls>
+                <source
+                  style={{ width: '100%', height: '100%' }}
+                  src={sermon4}
+                  type='video/mp4'
                 />
-                <div className='card-body'>
-                  <p className='card-text'>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div className='d-flex justify-content-between align-items-center'>
-                    <div className='btn-group'>
-                      <button type='button' className='btn btn-sm btn-info'>
-                        View
-                      </button>
-                    </div>
-                    <small className='text-muted'>9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='col-md-4'>
-              <div className='card mb-4 box-shadow'>
-                <img
-                  className='card-img-top'
-                  src='http://placehold.jp/150x100.png'
-                  alt='Card image cap'
-                />
-                <div className='card-body'>
-                  <p className='card-text'>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div className='d-flex justify-content-between align-items-center'>
-                    <div className='btn-group'>
-                      <button type='button' className='btn btn-sm btn-info'>
-                        View
-                      </button>
-                    </div>
-                    <small className='text-muted'>9 mins</small>
-                  </div>
-                </div>
-              </div>
+              </video>
             </div>
 
-            <div className='col-md-4'>
-              <div className='card mb-4 box-shadow'>
-                <img
-                  className='card-img-top'
-                  src='http://placehold.jp/150x100.png'
-                  alt='Card image cap'
+            <div className='col-md-3'>
+              <video style={{ width: '100%', height: '100%' }} controls>
+                <source
+                  style={{ width: '100%', height: '100%' }}
+                  src={sermon3}
+                  type='video/mp4'
                 />
-                <div className='card-body'>
-                  <p className='card-text'>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div className='d-flex justify-content-between align-items-center'>
-                    <div className='btn-group'>
-                      <button type='button' className='btn btn-sm btn-info'>
-                        View
-                      </button>
-                    </div>
-                    <small className='text-muted'>9 mins</small>
-                  </div>
-                </div>
-              </div>
+              </video>
             </div>
-            <div className='col-md-4'>
-              <div className='card mb-4 box-shadow'>
-                <img
-                  className='card-img-top'
-                  src='http://placehold.jp/150x100.png'
-                  alt='Card image cap'
+            <div className='col-md-3'>
+              <video style={{ width: '100%', height: '100%' }} controls>
+                <source
+                  style={{ width: '100%', height: '100%' }}
+                  src={sermon2}
+                  type='video/mp4'
                 />
-                <div className='card-body'>
-                  <p className='card-text'>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div className='d-flex justify-content-between align-items-center'>
-                    <div className='btn-group'>
-                      <button type='button' className='btn btn-sm btn-info'>
-                        View
-                      </button>
-                    </div>
-                    <small className='text-muted'>9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='col-md-4'>
-              <div className='card mb-4 box-shadow'>
-                <img
-                  className='card-img-top'
-                  src='http://placehold.jp/150x100.png'
-                  alt='Card image cap'
-                />
-                <div className='card-body'>
-                  <p className='card-text'>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div className='d-flex justify-content-between align-items-center'>
-                    <div className='btn-group'>
-                      <button type='button' className='btn btn-sm btn-info'>
-                        View
-                      </button>
-                    </div>
-                    <small className='text-muted'>9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className='col-md-4'>
-              <div className='card mb-4 box-shadow'>
-                <img
-                  className='card-img-top'
-                  src='http://placehold.jp/150x100.png'
-                  alt='Card image cap'
-                />
-                <div className='card-body'>
-                  <p className='card-text'>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div className='d-flex justify-content-between align-items-center'>
-                    <div className='btn-group'>
-                      <button type='button' className='btn btn-sm btn-info'>
-                        View
-                      </button>
-                    </div>
-                    <small className='text-muted'>9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='col-md-4'>
-              <div className='card mb-4 box-shadow'>
-                <img
-                  className='card-img-top'
-                  src='http://placehold.jp/150x100.png'
-                  alt='Card image cap'
-                />
-                <div className='card-body'>
-                  <p className='card-text'>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div className='d-flex justify-content-between align-items-center'>
-                    <div className='btn-group'>
-                      <button type='button' className='btn btn-sm btn-info'>
-                        View
-                      </button>
-                    </div>
-                    <small className='text-muted'>9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='col-md-4'>
-              <div className='card mb-4 box-shadow'>
-                <img
-                  className='card-img-top'
-                  src='http://placehold.jp/150x100.png'
-                  alt='Card image cap'
-                />
-                <div className='card-body'>
-                  <p className='card-text'>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div className='d-flex justify-content-between align-items-center'>
-                    <div className='btn-group'>
-                      <button type='button' className='btn btn-sm btn-info'>
-                        View
-                      </button>
-                    </div>
-                    <small className='text-muted'>9 mins</small>
-                  </div>
-                </div>
-              </div>
+              </video>
             </div>
           </div>
         </div>

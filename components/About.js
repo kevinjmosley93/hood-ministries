@@ -6,10 +6,10 @@ export default function about() {
     <>
       <div className='bg-overlay'>
         <div className='px-4 py-5 my-5 text-center'>
-          <h1 className='display-5 fw-bold'>About Us</h1>
+          <h1 className='display-5 fw-bold'>About</h1>
         </div>
       </div>
-      <Container className='py-5'>
+      <Container className='py-3 px-3 text-center'>
         <p style={{ textAlign: 'center' }}>
           <img
             src='https://cdn.shopify.com/s/files/1/0527/8292/3966/files/lilwill_380x380.jpg?v=1612315257'

@@ -2,7 +2,7 @@ import React from 'react'
 
 export const ImgText = () => {
   return (
-    <div className='container  px-4'>
+    <div className='container my-5  px-4'>
       <div className='row flex-lg-row-reverse align-items-center g-5 py-3'>
         <div className='col-md-6'>
           <h2 className=' fw-bold lh-1 p-3 mb-3 border-bottom'>Our Purpose</h2>
@@ -22,11 +22,11 @@ export const ImgText = () => {
         </div>
         <div className='col-10 col-sm-8 col-md-6'>
           <img
-            src='willmoms.png'
-            className='d-block mx-lg-auto img-fluid'
-            alt='Bootstrap Themes'
+            src='will.jpg'
+            className='d-block mx-lg-auto img-fluid rounded'
+            alt='pastor-will-img'
             width='500'
-            height='300'
+            height='250'
             loading='lazy'
           />
         </div>

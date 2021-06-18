@@ -13,11 +13,11 @@ const Header = () => {
         <Container className='d-flex flex-md-row'>
           <Navbar.Brand href='/'>
             <img
-              style={{ objectFit: 'contain' }}
+              style={{ objectFit: 'cover' }}
               width='150px'
-              height='85px'
+              height='70px'
               alt='I AM H.O.O.D'
-              src='https://i.imgur.com/PL0L0Nw.png'
+              src='https://i.imgur.com/QQMaJEK.png'
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
