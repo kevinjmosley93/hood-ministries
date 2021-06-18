@@ -6,7 +6,7 @@ export const ImgText = () => {
     <div className='container my-5  px-4'>
       <h2 className=' fw-bold lh-1 p-3 mb-3 border-bottom'>Our Purpose</h2>
       <div className='row justify-content-between align-items-center'>
-        <div className='col-md-7 g-4'>
+        <div className='col-md-7 g-2'>
           <p className='lead text-center'>
             A non for profit, charitable, religious organization for the
             purposes of the people to provide services to help the poor, needy,
@@ -27,7 +27,7 @@ export const ImgText = () => {
             src='/will.jpg'
             className='rounded'
             alt='pastor-will-img'
-            width={560}
+            width={500}
             height={470}
           />
         </div>

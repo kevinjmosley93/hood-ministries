@@ -6,6 +6,7 @@ import '../styles/globals.css'
 import '../styles/footer.css'
 import '../styles/blog.css'
 import '../styles/subscribe.css'
+import '../styles/services.css'
 
 function MyApp({ Component, pageProps }) {
   return (

@@ -27,6 +27,11 @@ body {
 }
 .footer-links {
   list-style-type: none;
+  padding-left: 0;
+}
+#footer__heading {
+  font-weight: 700;
+  padding-bottom: 0.5rem;
 }
 a {
   color: #fff;

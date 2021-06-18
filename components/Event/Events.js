@@ -57,26 +57,11 @@ export const Events = () => {
                   </li>
                 </ol>
               </div>
-
-              {/* <div className='p-4 shadow-lg mt-3'>
-                <h4 className='fst-italic'>Elsewhere</h4>
-                <ol className='list-unstyled'>
-                  <li>
-                    <a href='#'>GitHub</a>
-                  </li>
-                  <li>
-                    <a href='#'>Twitter</a>
-                  </li>
-                  <li>
-                    <a href='#'>Facebook</a>
-                  </li>
-                </ol>
-              </div> */}
             </div>
           </div>
           <div className='col-md-8'>
             <h3 className='border-bottom pb-2'>Upcoming Events</h3>
-            <div class='col mt-3'>
+            <div className='col mt-3'>
               <div className='row g-0 flex-md-row mb-4 rounded shadow-lg h-md-250'>
                 <Card className='col h-auto p-4 d-flex flex-column'>
                   <Card.Title className='mb-3'>Sunday Service</Card.Title>
@@ -89,7 +74,7 @@ export const Events = () => {
                 </Card>
               </div>
             </div>
-            <div class='col mt-3'>
+            <div className='col mt-3'>
               <div className='row g-0 flex-md-row mb-4 shadow-lg h-md-250'>
                 <Card className='col p-4 d-flex flex-column'>
                   <Card.Title className='mb-3'>
@@ -115,7 +100,7 @@ export const Events = () => {
               <div className='card-body'>
                 <form>
                   <div className='form-group'>
-                    <label for='name'>Name</label>
+                    <label htmlFor='name'>Name</label>
                     <input
                       type='text'
                       className='form-control'
@@ -126,7 +111,7 @@ export const Events = () => {
                     />
                   </div>
                   <div className='form-group'>
-                    <label for='email'>Email address</label>
+                    <label htmlFor='email'>Email address</label>
                     <input
                       type='email'
                       className='form-control'
@@ -140,7 +125,7 @@ export const Events = () => {
                     </small>
                   </div>
                   <div className='form-group'>
-                    <label for='message'>Event Details</label>
+                    <label htmlFor='message'>Event Details</label>
                     <textarea
                       className='form-control'
                       id='message'

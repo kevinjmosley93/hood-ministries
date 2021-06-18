@@ -15,7 +15,7 @@ export const Subscribe = () => {
                     <h6 className='h-5 mb-3'>Join the I am H.O.O.D Familiy</h6>
                     <Form>
                       <Form.Group className='form-group'>
-                        <Form.Label for='yourName'>Your name</Form.Label>
+                        <Form.Label htmlFor='yourName'>Your name</Form.Label>
                         <Form.Control
                           type='text'
                           className='form-control'
@@ -23,7 +23,7 @@ export const Subscribe = () => {
                         />
                       </Form.Group>
                       <Form.Group className='form-group'>
-                        <Form.Label for='exampleInputEmail1'>
+                        <Form.Label htmlFor='exampleInputEmail1'>
                           Email address
                         </Form.Label>
                         <Form.Control type='email' className='form-control' />
@@ -40,9 +40,9 @@ export const Subscribe = () => {
                     <div className='account-testimonial'>
                       <h4 className='text-white mb-4'>Scripture of the Day!</h4>
                       <p className='lead text-white'>
-                        "If you pour yourself out for the hungry and satisfy the
-                        desire of the afflicted, then shall your light rise in
-                        the darkness and your gloom be as the noonday."
+                        "If you pour yourself out htmlFor the hungry and satisfy
+                        the desire of the afflicted, then shall your light rise
+                        in the darkness and your gloom be as the noonday."
                       </p>
                       <p>- Isaiah 58:10</p>
                     </div>

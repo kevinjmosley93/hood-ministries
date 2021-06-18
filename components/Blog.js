@@ -30,8 +30,8 @@ const Blog = () => {
     <Container className='px-4'>
       <h2 className='p-2 mb-4 mt-5 fw-bold lh-1 border-bottom'>Blog</h2>
       <div style={{ margin: '0 auto' }} className='row'>
-        {blogPosts.map(({ title, img, body, author, createdAt }) => (
-          <div className='col-md-4'>
+        {blogPosts.map(({ title, img, body, author, createdAt }, idx) => (
+          <div key={idx} className='col-lg-4'>
             <div className='blog-grid'>
               <div className='blog-img'>
                 <a href='/blog'>

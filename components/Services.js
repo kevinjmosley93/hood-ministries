@@ -1,90 +1,76 @@
+import { useState } from 'react'
+import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md'
 import { Container } from 'react-bootstrap'
-import { FaPrayingHands } from 'react-icons/fa'
 import Image from 'next/image'
 
+const services = [
+  {
+    id: 0,
+    title: 'Pastoral Counseling',
+    body: 'General Comments, Counseling, intake, substance use Disorder, people dealing with grieving, death of child, suicide, adults'
+  },
+  {
+    id: 1,
+    title: 'Visitation',
+    body: 'Jail and prison, juvenile detention center, hospitals, mental health facilities, homes, nursing homes & hospice facilities.'
+  },
+  {
+    id: 3,
+    title: 'Funerals',
+    body: 'Funerals for Adults, Funerals for Infant or a Child, Funeral for non-church members, funerals for person who died by suicide.'
+  },
+  {
+    id: 4,
+    title: 'Weddings',
+    body: ' Premarital counseling, wedding rehearsals, traditional wedding ceremony , modern wedding ceremony, reaffirmation/renewal of vows.'
+  },
+  {
+    id: 5,
+    title: 'Volunteer Events',
+    body: 'We will speak or host any event where you would like the presence of the lord.'
+  }
+]
+
 export const Services = () => {
+  const [expanded, setExpanded] = useState(false)
+  const [uid, setUid] = useState(null)
   return (
     <>
       <Container className='px-4' id='hanging-icons'>
         <h2 className='pb-2  fw-bold lh-1 border-bottom'>Our Services</h2>
-        <section className='row'>
-          <div className='col-md-5'>
+        <section className='row align-items-center'>
+          <div className='col-md-7'>
             <Image
               className='rounded pt-3'
               style={{ objectFit: 'cover' }}
-              height={310}
+              height={470}
               width={500}
               src='/services.jpg'
               alt='services-img'
             />
           </div>
-          <div className='col-md-7 g-5'>
-            <div className='accordion' id='accordionExample'>
-              <div className='accordion-item'>
-                <h2 className='accordion-header' id='headingOne'>
+          <div className='col-md-5 g-2'>
+            {services.map(({ title, body, id }) => (
+              <article key={id} className='question border-bottom'>
+                <header>
+                  <h4 className='question-title'>{title}</h4>
                   <button
-                    className='accordion-button'
-                    type='button'
-                    data-bs-toggle='collapse'
-                    data-bs-target='#collapseOne'
-                    aria-expanded='true'
-                    aria-controls='collapseOne'>
-                    Accordion Item #1
+                    className='button'
+                    onClick={() => {
+                      setUid(id)
+                      setExpanded(!expanded)
+                      console.log({ uid })
+                    }}>
+                    {expanded && id === uid ? (
+                      <MdKeyboardArrowDown />
+                    ) : (
+                      <MdKeyboardArrowUp />
+                    )}
                   </button>
-                </h2>
-                <div
-                  id='collapseOne'
-                  className='accordion-collapse collapse show'
-                  aria-labelledby='headingOne'
-                  data-bs-parent='#accordionExample'>
-                  <div className='accordion-body'></div>
-                </div>
-              </div>
-              <div className='accordion-item'>
-                <h2 className='accordion-header' id='headingTwo'>
-                  <button
-                    className='accordion-button collapsed'
-                    type='button'
-                    data-bs-toggle='collapse'
-                    data-bs-target='#collapseTwo'
-                    aria-expanded='false'
-                    aria-controls='collapseTwo'>
-                    Accordion Item #2
-                  </button>
-                </h2>
-                <div
-                  id='collapseTwo'
-                  className='accordion-collapse collapse'
-                  aria-labelledby='headingTwo'
-                  data-bs-parent='#accordionExample'>
-                  <div className='accordion-body'>
-                    <strong>This is the second item's accordion body.</strong>
-                  </div>
-                </div>
-              </div>
-              <div className='accordion-item'>
-                <h2 className='accordion-header' id='headingThree'>
-                  <button
-                    className='accordion-button collapsed'
-                    type='button'
-                    data-bs-toggle='collapse'
-                    data-bs-target='#collapseThree'
-                    aria-expanded='false'
-                    aria-controls='collapseThree'>
-                    Accordion Item #3
-                  </button>
-                </h2>
-                <div
-                  id='collapseThree'
-                  className='accordion-collapse collapse'
-                  aria-labelledby='headingThree'
-                  data-bs-parent='#accordionExample'>
-                  <div className='accordion-body'>
-                    <strong>This is the third item's accordion body.</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
+                </header>
+                {expanded && id === uid && <p>{body}</p>}
+              </article>
+            ))}
           </div>
         </section>
       </Container>
