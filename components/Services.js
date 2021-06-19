@@ -52,15 +52,14 @@ export const Services = () => {
           <div className='col-md-7 g-2'>
             {services.map(({ title, body, id }) => (
               <article key={id} className='question border-bottom'>
-                <header>
+                <header
+                  onClick={() => {
+                    setUid(id)
+                    setExpanded(!expanded)
+                    console.log({ uid })
+                  }}>
                   <h4 className='question-title'>{title}</h4>
-                  <button
-                    className='button'
-                    onClick={() => {
-                      setUid(id)
-                      setExpanded(!expanded)
-                      console.log({ uid })
-                    }}>
+                  <button className='button'>
                     {expanded && id === uid ? (
                       <MdKeyboardArrowDown />
                     ) : (
