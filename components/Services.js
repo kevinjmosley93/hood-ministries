@@ -38,18 +38,18 @@ export const Services = () => {
     <>
       <Container className='px-4' id='hanging-icons'>
         <h2 className='pb-2  fw-bold lh-1 border-bottom'>Our Services</h2>
-        <section className='row align-items-center'>
-          <div className='col-md-7'>
+        <section className='row'>
+          <div className='col-md-5'>
             <Image
               className='rounded pt-3'
               style={{ objectFit: 'cover' }}
               height={470}
-              width={500}
+              width={730}
               src='/services.jpg'
               alt='services-img'
             />
           </div>
-          <div className='col-md-5 g-2'>
+          <div className='col-md-7 g-2'>
             {services.map(({ title, body, id }) => (
               <article key={id} className='question border-bottom'>
                 <header>

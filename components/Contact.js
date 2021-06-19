@@ -1,7 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container } from 'react-bootstrap'
 
 export const Contact = () => {
+  const [formInput, setFormInput] = useState({
+    form: {
+      name: '',
+      email: '',
+      message: ''
+    }
+  })
+  const handleChange = e => {
+    const updatedField = { [e.target.name]: e.target.value }
+    setFormInput(currState => {
+      const updatedForm = { ...currState.form, ...updatedField }
+      return { form: updatedForm }
+    })
+  }
+  const handleForm = async e => {
+    e.preventDefault()
+    const { name, email, message } = formInput.form
+    const resObj = {
+      name,
+      email,
+      message
+    }
+    const res = await fetch(`${window.location.origin}/api/mail`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(resObj)
+    })
+    const data = await res.json()
+    console.log({ data })
+  }
   return (
     <>
       <Container className='my-5'>
@@ -40,10 +70,12 @@ export const Contact = () => {
                 <i className='fa fa-envelope'></i> Contact us.
               </div>
               <div className='card-body'>
-                <form>
+                <form onSubmit={handleForm}>
                   <div className='form-group'>
-                    <label for='name'>Name</label>
+                    <label htmlFor='name'>Name</label>
                     <input
+                      onChange={handleChange}
+                      name='name'
                       type='text'
                       className='form-control'
                       id='name'
@@ -53,8 +85,10 @@ export const Contact = () => {
                     />
                   </div>
                   <div className='form-group'>
-                    <label for='email'>Email address</label>
+                    <label htmlFor='email'>Email address</label>
                     <input
+                      onChange={handleChange}
+                      name='email'
                       type='email'
                       className='form-control'
                       id='email'
@@ -67,8 +101,10 @@ export const Contact = () => {
                     </small>
                   </div>
                   <div className='form-group'>
-                    <label for='message'>Message</label>
+                    <label htmlFor='message'>Message</label>
                     <textarea
+                      onChange={handleChange}
+                      name='message'
                       className='form-control'
                       id='message'
                       rows='6'
