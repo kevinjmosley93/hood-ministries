@@ -25,29 +25,35 @@ const teamMembers = [
 
 export const Team = () => {
   return (
-    <Container>
-      <h2 className='pb-2  fw-bold lh-1 border-bottom mb-5'>Meet Our Team</h2>
-      <section className='testimonials text-center'>
-        <div className='row align-items-center'>
-          {teamMembers.map(({ name, title, bio, img }, idx) => (
-            <div key={idx} className='col-lg-4'>
-              <div className='testimonial-item mx-auto mb-5 mb-lg-0'>
-                <img
-                  style={{ objectFit: 'cover' }}
-                  width={150}
-                  height={150}
-                  className='rounded-circle mb-3'
-                  src={img}
-                  alt='H.O.O.D Team Member'
-                />
-                <h3>{name}</h3>
-                <small className='fw-bold'>{title}</small>
-                <p className='font-weight-light mb-0'>{bio}</p>
+    <>
+      <Container>
+        <h2 className='pb-2  fw-bold lh-1 border-bottom mb-5'>Meet Our Team</h2>
+        <section className='testimonials text-center'>
+          <div className='row align-items-center'>
+            {teamMembers.map(({ name, title, bio, img }, idx) => (
+              <div key={idx} className='col-lg-4'>
+                <div className='testimonial-item mx-auto mb-5 mb-lg-0'>
+                  <img
+                    style={{ objectFit: 'cover' }}
+                    width={150}
+                    height={150}
+                    className='rounded-circle mb-3'
+                    src={img}
+                    alt='H.O.O.D Team Member'
+                  />
+                  <h3>{name}</h3>
+                  <small className='fw-bold'>{title}</small>
+                  <p
+                    style={{ lineHeight: '2rem' }}
+                    className='font-weight-light'>
+                    {bio}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    </Container>
+            ))}
+          </div>
+        </section>
+      </Container>
+    </>
   )
 }

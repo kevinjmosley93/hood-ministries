@@ -58,13 +58,13 @@ export const Services = () => {
                     console.log({ uid })
                   }}>
                   <h4 className='question-title'>{title}</h4>
-                  <button className='button'>
+                  <span className='button'>
                     {expanded && id === uid ? (
-                      <MdKeyboardArrowDown />
+                      <i class='fa fa-minus-circle'></i>
                     ) : (
-                      <MdKeyboardArrowUp />
+                      <i class='fa fa-plus-circle'></i>
                     )}
-                  </button>
+                  </span>
                 </header>
                 {expanded && id === uid && <p>{body}</p>}
               </article>

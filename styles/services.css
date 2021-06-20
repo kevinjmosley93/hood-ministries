@@ -7,7 +7,6 @@ main {
 
 .question {
   padding: 1rem 1.5rem;
-  border: 2px solid var(--clr-grey-special);
   margin-bottom: 1rem;
 }
 .question h4 {
@@ -29,15 +28,5 @@ main {
   margin-bottom: 0;
 }
 .button {
-  background-color: #36ceef;
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-left: 1rem;
-  align-self: center;
-  min-width: 2rem;
+  font-size: xx-large;
 }

@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <div className='bg-overlay'>
       <Container>
-        <div className='px-4 py-5 my-5 text-center'>
+        <div className='px-4 py-2 text-center'>
           <h1 className='display-5 fw-bold mb-2'>
             I Am (H.O.O.D) Helping Others Obtain Destiny
           </h1>
