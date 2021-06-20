@@ -4,10 +4,10 @@ import Image from 'next/image'
 export const ImgText = () => {
   return (
     <div className='container my-5  px-4'>
-      <h2 className=' fw-bold lh-1 p-3 mb-3 border-bottom'>Our Purpose</h2>
-      <div className='row justify-content-between align-items-center'>
+      <h2 className=' fw-bold p-3 mb-3 border-bottom'>Our Purpose</h2>
+      <div className='pt-2 row justify-content-between align-items-center'>
         <div className='col-md-7 g-2'>
-          <p className='lead text-center'>
+          <p style={{ lineHeight: '2.5rem' }} className=' text-left pt-0 p-2'>
             A non for profit, charitable, religious organization for the
             purposes of the people to provide services to help the poor, needy,
             middle-class, and broken families in neighborhoods around the world.
@@ -25,7 +25,7 @@ export const ImgText = () => {
           <Image
             style={{ objectFit: 'cover' }}
             src='/will.jpg'
-            className='rounded'
+            className='rounded-circle'
             alt='pastor-will-img'
             width={500}
             height={470}

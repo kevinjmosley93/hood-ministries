@@ -15,17 +15,17 @@ const services = [
     body: 'Jail and prison, juvenile detention center, hospitals, mental health facilities, homes, nursing homes & hospice facilities.'
   },
   {
-    id: 3,
+    id: 2,
     title: 'Funerals',
     body: 'Funerals for Adults, Funerals for Infant or a Child, Funeral for non-church members, funerals for person who died by suicide.'
   },
   {
-    id: 4,
+    id: 3,
     title: 'Weddings',
     body: ' Premarital counseling, wedding rehearsals, traditional wedding ceremony , modern wedding ceremony, reaffirmation/renewal of vows.'
   },
   {
-    id: 5,
+    id: 4,
     title: 'Volunteer Events',
     body: 'We will speak or host any event where you would like the presence of the lord.'
   }
@@ -42,7 +42,6 @@ export const Services = () => {
           <div className='col-md-5'>
             <Image
               className='rounded pt-3'
-              style={{ objectFit: 'cover' }}
               height={470}
               width={730}
               src='/services.jpg'

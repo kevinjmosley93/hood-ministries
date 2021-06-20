@@ -9,6 +9,9 @@ export const Contact = () => {
       message: ''
     }
   })
+
+  const [submitted, setSubmitted] = useState(false)
+
   const handleChange = e => {
     const updatedField = { [e.target.name]: e.target.value }
     setFormInput(currState => {
@@ -29,9 +32,26 @@ export const Contact = () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(resObj)
     })
-    const data = await res.json()
-    console.log({ data })
+    const { status } = await res.json()
+    if (status === 'ok') {
+      setSubmitted(true)
+    }
+
+    if (submitted) {
+      setFormInput({
+        form: {
+          name: '',
+          email: '',
+          message: ''
+        }
+      })
+      console.log({ formInput, submitted })
+    }
   }
+
+  const {
+    form: { name, email, message }
+  } = formInput
   return (
     <>
       <Container className='my-5'>
@@ -52,7 +72,7 @@ export const Contact = () => {
               <div
                 style={{ backgroundColor: '#1B4965' }}
                 className='card-header text-white text-uppercase'>
-                <i className='fa fa-home'></i> Contact Info
+                <i className='fa fa-phone'></i> Contact Info
               </div>
               <div className='card-body'>
                 <p>Email: contact@helpingthehood.com</p>
@@ -74,6 +94,7 @@ export const Contact = () => {
                   <div className='form-group'>
                     <label htmlFor='name'>Name</label>
                     <input
+                      value={name}
                       onChange={handleChange}
                       name='name'
                       type='text'
@@ -87,6 +108,7 @@ export const Contact = () => {
                   <div className='form-group'>
                     <label htmlFor='email'>Email address</label>
                     <input
+                      value={email}
                       onChange={handleChange}
                       name='email'
                       type='email'
@@ -103,6 +125,7 @@ export const Contact = () => {
                   <div className='form-group'>
                     <label htmlFor='message'>Message</label>
                     <textarea
+                      value={message}
                       onChange={handleChange}
                       name='message'
                       className='form-control'

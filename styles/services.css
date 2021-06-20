@@ -9,8 +9,6 @@ main {
   padding: 1rem 1.5rem;
   border: 2px solid var(--clr-grey-special);
   margin-bottom: 1rem;
-  border-radius: var(--radius);
-  box-shadow: var(--light-shadow);
 }
 .question h4 {
   text-transform: none;
@@ -22,6 +20,7 @@ main {
   margin-top: 0.5rem;
 }
 .question header {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,8 +29,7 @@ main {
   margin-bottom: 0;
 }
 .button {
-  background: transparent;
-  border-color: transparent;
+  background-color: #36ceef;
   width: 2rem;
   height: 2rem;
   display: flex;

@@ -1,61 +1,71 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Card, Container } from 'react-bootstrap'
 
 export const Events = () => {
+  const [formInput, setFormInput] = useState({
+    form: {
+      name: '',
+      email: '',
+      details: ''
+    }
+  })
+  const [submitted, setSubmitted] = useState(false)
+
+  const handleChange = e => {
+    const updatedField = { [e.target.name]: e.target.value }
+    setFormInput(currState => {
+      const updatedForm = { ...currState.form, ...updatedField }
+      return { form: updatedForm }
+    })
+  }
+  const handleForm = async e => {
+    e.preventDefault()
+    const { name, email, details } = formInput.form
+    const resObj = {
+      name,
+      email,
+      message: details
+    }
+    const res = await fetch(`${window.location.origin}/api/mail`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(resObj)
+    })
+
+    const { status } = await res.json()
+    if (status === 'ok') {
+      setSubmitted(true)
+    }
+
+    if (submitted) {
+      setFormInput({
+        form: {
+          name: '',
+          email: '',
+          details: ''
+        }
+      })
+      console.log({ formInput })
+    }
+    console.log({ submitted })
+  }
+
+  const {
+    form: { name, email, details }
+  } = formInput
+
   return (
     <>
       <Container className='mb-3'>
         <div className='row g-5 mt-3'>
           <div className='col-md-4'>
-            <div className='position-sticky pt-2' style={{ top: '2rem' }}>
+            <div className='position-sticky pt-5' style={{ top: '2rem' }}>
               <div className='p-4 mb-3 bg-light rounded shadow-lg'>
                 <h4 className='fst-italic'>Events</h4>
                 <p className='mb-0'>
                   We are constantly looking for new events. Send us a message so
                   we can host your next event.
                 </p>
-              </div>
-
-              <div className='p-4 shadow-lg mt-3'>
-                <h4 className='fst-italic'>Archives</h4>
-                <ol className='list-unstyled mb-0'>
-                  <li>
-                    <a href='#'>March 2021</a>
-                  </li>
-                  <li>
-                    <a href='#'>February 2021</a>
-                  </li>
-                  <li>
-                    <a href='#'>January 2021</a>
-                  </li>
-                  <li>
-                    <a href='#'>December 2020</a>
-                  </li>
-                  <li>
-                    <a href='#'>November 2020</a>
-                  </li>
-                  <li>
-                    <a href='#'>October 2020</a>
-                  </li>
-                  <li>
-                    <a href='#'>September 2020</a>
-                  </li>
-                  <li>
-                    <a href='#'>August 2020</a>
-                  </li>
-                  <li>
-                    <a href='#'>July 2020</a>
-                  </li>
-                  <li>
-                    <a href='#'>June 2020</a>
-                  </li>
-                  <li>
-                    <a href='#'>May 2020</a>
-                  </li>
-                  <li>
-                    <a href='#'>April 2020</a>
-                  </li>
-                </ol>
               </div>
             </div>
           </div>
@@ -98,10 +108,13 @@ export const Events = () => {
                 <i className='fa fa-envelope'></i> Contact us.
               </div>
               <div className='card-body'>
-                <form>
+                <form onSubmit={handleForm}>
                   <div className='form-group'>
                     <label htmlFor='name'>Name</label>
                     <input
+                      name='name'
+                      value={name}
+                      onChange={handleChange}
                       type='text'
                       className='form-control'
                       id='name'
@@ -113,6 +126,9 @@ export const Events = () => {
                   <div className='form-group'>
                     <label htmlFor='email'>Email address</label>
                     <input
+                      value={email}
+                      name='email'
+                      onChange={handleChange}
                       type='email'
                       className='form-control'
                       id='email'
@@ -125,10 +141,13 @@ export const Events = () => {
                     </small>
                   </div>
                   <div className='form-group'>
-                    <label htmlFor='message'>Event Details</label>
+                    <label htmlFor='details'>Event Details</label>
                     <textarea
+                      name='details'
+                      value={details}
+                      onChange={handleChange}
                       className='form-control'
-                      id='message'
+                      id='details'
                       rows='6'
                       required></textarea>
                   </div>
