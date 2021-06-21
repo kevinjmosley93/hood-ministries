@@ -22,25 +22,22 @@ export const Footer = () => {
             </h1>
             <ul className='footer-links'>
               <li>
-                <a href='#'>About Us</a>
+                <a href='/about'>About Us</a>
               </li>
               <li>
-                <a href='#'>Events</a>
+                <a href='/events'>Events</a>
               </li>
               <li>
-                <a href='#'>Worship</a>
+                <a href='/worship'>Worship</a>
               </li>
               <li>
-                <a href='#'>Terms of Service</a>
+                <a href='/privacy-policy'>Privacy Policy</a>
               </li>
               <li>
-                <a href='#'>Privacy Policy</a>
+                <a href='/donation-policy'>Donation Policy</a>
               </li>
               <li>
-                <a href='#'>Donation Policy</a>
-              </li>
-              <li>
-                <a href='#'>Contact us</a>
+                <a href='/contact'>Contact us</a>
               </li>
             </ul>
           </Col>
@@ -54,11 +51,9 @@ export const Footer = () => {
               <div>
                 1951 W 21st St <br />
                 Broadview, IL 60155
-              </div>
-              <br />
-              <span>
+                <br />
                 <a href='#'>info@helpingthehood.com</a>
-              </span>
+              </div>
             </div>
           </Col>
           <Col sm={6} md={3}>
