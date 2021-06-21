@@ -31,7 +31,7 @@ export const Footer = () => {
                 <a href='/worship'>Worship</a>
               </li>
               <li>
-                <a href='/privacy-policy'>Privacy Policy</a>
+                <a href='#'>Privacy Policy</a>
               </li>
               <li>
                 <a href='/donation-policy'>Donation Policy</a>
