@@ -19,7 +19,7 @@ const teamMembers = [
     img: '/kev.jpg',
     name: 'Kevin',
     title: 'Technology Consultant',
-    bio: 'U.S. Navy veteran & Software Engineer for a prison education start-up. He helps I am H.O.O.D build their digtal presence and save souls in the process.'
+    bio: 'U.S. Navy veteran & Software Engineer for a prison education start-up. He helps I am H.O.O.D build their digital presence and save souls in the process.'
   }
 ]
 
