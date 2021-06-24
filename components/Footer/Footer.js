@@ -82,7 +82,8 @@ export const Footer = () => {
           style={{
             height: 'auto',
             margin: '0 auto',
-            fontWeight: '700'
+            fontWeight: '700',
+            fontSize: '.6rem'
           }}>
           <p className='text-center py-3 text-light mb-0'>
             {new Date().getFullYear()} All Rights Reserved | I am (H.O.O.D)
