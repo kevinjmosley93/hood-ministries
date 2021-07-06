@@ -59,7 +59,7 @@ export const Events = () => {
       <Container className='mb-3'>
         <div className='row g-5 mt-3'>
           <div className='col-md-4'>
-            <div className='position-sticky pt-5' style={{ top: '2rem' }}>
+            <div className='' style={{ top: '2rem' }}>
               <div className='p-4 mb-3 bg-light rounded shadow-lg'>
                 <h4 className='fst-italic'>Events</h4>
                 <p className='mb-0'>
