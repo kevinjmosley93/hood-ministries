@@ -14,8 +14,13 @@ export const EventPrev = () => {
             Upcoming Event
           </Card.Subtitle>
           <div className='d-flex flex-row pt-4'>
-            <Card.Title style={{ fontSize: '1rem' }}>
-              Youth Explosion - July 10th, 2021 | Columbus, OH{' '}
+            <Card.Title
+              style={{
+                fontSize: '1rem',
+                paddingRight: '15px'
+              }}>
+              1st Annual Men's Conference <br /> December 18th, 2021 - 6:00pm at
+              Hyatt Hyde Park 5225 S. Harper St. Chicago, IL 60615{' '}
             </Card.Title>
             <Button
               as='a'

@@ -61,7 +61,9 @@ export const Footer = () => {
               CONNECT
             </h1>
             <div className='social-icons d-flex flex-row justify-content-between'>
-              <a href='#'>
+              <a
+                target='_blank'
+                href='https://www.facebook.com/Helping-Others-Obtain-Destiny-108515418089054'>
                 <FaFacebookF />
               </a>{' '}
               <a

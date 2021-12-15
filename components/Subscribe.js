@@ -40,11 +40,8 @@ export const Subscribe = () => {
                     <div className='account-testimonial'>
                       <h4 className='text-white mb-4'>Scripture of the Day!</h4>
                       <p className='lead text-white'>
-                        "If you pour yourself out htmlFor the hungry and satisfy
-                        the desire of the afflicted, then shall your light rise
-                        in the darkness and your gloom be as the noonday."
+                        <div id='dailyVersesWrapper'></div>
                       </p>
-                      <p>- Isaiah 58:10</p>
                     </div>
                   </div>
                 </div>

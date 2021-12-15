@@ -6,6 +6,7 @@ export const Contact = () => {
     form: {
       name: '',
       email: '',
+      phone: '',
       message: ''
     }
   })
@@ -25,6 +26,7 @@ export const Contact = () => {
     const resObj = {
       name,
       email,
+      phone,
       message
     }
     const res = await fetch(`${window.location.origin}/api/mail`, {
@@ -33,7 +35,7 @@ export const Contact = () => {
       body: JSON.stringify(resObj)
     })
     const { status } = await res.json()
-    if (status === 'ok') {
+    if (status === 'ok' || status === 202 || status === 200) {
       setSubmitted(true)
     }
 
@@ -42,6 +44,7 @@ export const Contact = () => {
         form: {
           name: '',
           email: '',
+          phone: '',
           message: ''
         }
       })
@@ -50,7 +53,7 @@ export const Contact = () => {
   }
 
   const {
-    form: { name, email, message }
+    form: { name, email, phone, message }
   } = formInput
   return (
     <>
@@ -104,6 +107,24 @@ export const Contact = () => {
                       placeholder='Enter name'
                       required
                     />
+                  </div>
+                  <div className='form-group'>
+                    <label htmlFor='phone'>Phone Number</label>
+                    <input
+                      name='phone'
+                      value={phone}
+                      onChange={handleChange}
+                      type='tel'
+                      pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
+                      className='form-control'
+                      id='phone'
+                      aria-describedby='emailHelp'
+                      placeholder='Enter phone number'
+                      required
+                    />
+                    <small id='emailHelp' className='form-text text-muted'>
+                      *Use this format: 123-456-7890
+                    </small>
                   </div>
                   <div className='form-group'>
                     <label htmlFor='email'>Email address</label>

@@ -7,11 +7,11 @@ const sgMail = require('@sendgrid/mail')
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 export default async (req, res, next) => {
-  const { email, name, message } = req.body
+  const { email, name, phone, message } = req.body
 
   const userMsg = `
   Hey Will,\r\n
-  ${name} has sent the following  message from your website:\r\n
+  ${name}, phone number:${phone} has sent the following message from your website:\r\n
   ${message}
   `
 

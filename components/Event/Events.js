@@ -6,6 +6,7 @@ export const Events = () => {
     form: {
       name: '',
       email: '',
+      phone: '',
       details: ''
     }
   })
@@ -24,6 +25,7 @@ export const Events = () => {
     const resObj = {
       name,
       email,
+      phone,
       message: details
     }
     const res = await fetch(`${window.location.origin}/api/mail`, {
@@ -42,6 +44,7 @@ export const Events = () => {
         form: {
           name: '',
           email: '',
+          phone: '',
           details: ''
         }
       })
@@ -51,7 +54,7 @@ export const Events = () => {
   }
 
   const {
-    form: { name, email, details }
+    form: { name, email, phone, details }
   } = formInput
 
   return (
@@ -88,15 +91,16 @@ export const Events = () => {
               <div className='row g-0 flex-md-row mb-4 shadow-lg h-md-250'>
                 <Card className='col p-4 d-flex flex-column'>
                   <Card.Title className='mb-3'>
-                    Columbus OH Youth Explosion
+                    1st Annual Men's Conference
                   </Card.Title>
                   <Card.Subtitle className='mb-1 text-muted'>
-                    July 10th 2021
+                    December 18th, 2021 - 6:00pm at Hyatt Hyde Park 5225 S.
+                    Harper St. Chicago, IL 60615
                   </Card.Subtitle>
                   <Card.Text className='mb-auto'>
                     {' '}
-                    Join us as we share a word for the youth and bring young
-                    lives to Christ!
+                    Join us as we address the Men of God and help them grow
+                    closer to Christ!
                   </Card.Text>
                 </Card>
               </div>
@@ -122,6 +126,25 @@ export const Events = () => {
                       placeholder='Enter name'
                       required
                     />
+                  </div>
+                  <div className='form-group'>
+                    <label htmlFor='phone'>Phone Number</label>
+
+                    <input
+                      name='phone'
+                      value={phone}
+                      onChange={handleChange}
+                      type='tel'
+                      pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
+                      className='form-control'
+                      id='phone'
+                      aria-describedby='emailHelp'
+                      placeholder='Enter phone number'
+                      required
+                    />
+                    <small id='emailHelp' className='form-text text-muted'>
+                      *Use this format: 123-456-7890
+                    </small>
                   </div>
                   <div className='form-group'>
                     <label htmlFor='email'>Email address</label>
