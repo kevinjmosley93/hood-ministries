@@ -78,7 +78,7 @@ export const Contact = () => {
                 <i className='fa fa-phone'></i> Contact Info
               </div>
               <div className='card-body'>
-                <p>Email: contact@helpingthehood.com</p>
+                <p>Email: <a href='mailto:pastorwill@thehoodchurch.org'>pastorwill@thehoodchurch.org</a></p>
 
                 <p>Phone #: (708) 998 - 6176</p>
               </div>

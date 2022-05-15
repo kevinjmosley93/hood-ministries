@@ -544,7 +544,7 @@ export default function privacyPolicy() {
         </p>
         <ul>
           <li>
-            <p>By email: info@helpingthehood.com</p>
+            <p>By email: pastorwill@thehoodchurch.org</p>
           </li>
           <li>
             <p>

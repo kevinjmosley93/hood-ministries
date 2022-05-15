@@ -29,7 +29,7 @@ const Header = () => {
               <Nav.Link href='/worship'>Worship</Nav.Link>
               <Nav.Link href='/contact'>Contact</Nav.Link>
             </Nav>
-            <Nav className='ms-auto'>
+            <Nav id='mobile-nav' className='ms-auto'>
               <Button
                 as='a'
                 target='_blank'

@@ -7,7 +7,7 @@ export const ImgText = () => {
       <h2 className=' fw-bold p-3 mb-3 border-bottom'>Our Purpose</h2>
       <div className='pt-2 row justify-content-between align-items-center'>
         <div className='col-md-7 g-2'>
-          <p style={{ lineHeight: '2.5rem' }} className=' text-left pt-0 p-2'>
+          <p style={{ lineHeight: '2.5rem', textAlign:'justify' }} className=' text-left pt-0 p-2'>
             A non for profit, charitable, religious organization for the
             purposes of the people to provide services to help the poor, needy,
             middle-class, and broken families in neighborhoods around the world.
@@ -25,7 +25,7 @@ export const ImgText = () => {
           <Image
             style={{ objectFit: 'cover' }}
             src='/will.jpg'
-            className='rounded-circle'
+            className='rounded'
             alt='pastor-will-img'
             width={500}
             height={470}

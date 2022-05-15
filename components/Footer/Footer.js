@@ -8,7 +8,7 @@ export const Footer = () => {
       <Container className=' text-light py-4 pt-5'>
         <Row className='mb-5'>
           <Col sm={6} md={3}>
-            <h1 id='footer__heading' classname='fw-bold mb-5'>
+            <h1 id='footer__heading' className='fw-bold mb-2'>
               ABOUT THE CHURCH
             </h1>
             <p>
@@ -17,7 +17,7 @@ export const Footer = () => {
             </p>
           </Col>
           <Col sm={6} md={3}>
-            <h1 id='footer__heading' classname='fw-bold mb-5'>
+            <h1 id='footer__heading' className='fw-bold mb-2'>
               IMPORTANT LINKS
             </h1>
             <ul className='footer-links'>
@@ -42,7 +42,7 @@ export const Footer = () => {
             </ul>
           </Col>
           <Col sm={6} md={3}>
-            <h1 id='footer__heading' classname='fw-bold mb-5'>
+            <h1 id='footer__heading' className='fw-bold mb-2'>
               LOCATION
             </h1>
             <div>
@@ -52,12 +52,12 @@ export const Footer = () => {
                 1951 W 21st St <br />
                 Broadview, IL 60155
                 <br />
-                <a href='#'>info@helpingthehood.com</a>
+                <a href='mailto:pastorwill@thehoodchurch.org'>pastorwill@thehoodchurch.org</a>
               </div>
             </div>
           </Col>
           <Col sm={6} md={3}>
-            <h1 id='footer__heading' classname='fw-bold mb-5'>
+            <h1 id='footer__heading' className='fw-bold mb-2'>
               CONNECT
             </h1>
             <div className='social-icons d-flex flex-row justify-content-between'>
