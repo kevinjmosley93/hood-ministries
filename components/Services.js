@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md'
 import { Container } from 'react-bootstrap'
 import Image from 'next/image'
+import Accordion from './Accordion'
 
 const services = [
   {
@@ -32,8 +33,7 @@ const services = [
 ]
 
 export const Services = () => {
-  const [expanded, setExpanded] = useState(false)
-  const [uid, setUid] = useState(null)
+ 
   return (
     <>
       <Container className='px-4' id='hanging-icons'>
@@ -50,24 +50,7 @@ export const Services = () => {
           </div>
           <div className='col-md-7 g-2'>
             {services.map(({ title, body, id }) => (
-              <article key={id} className='question border-bottom'>
-                <header
-                  onClick={() => {
-                    setUid(id)
-                    setExpanded(!expanded)
-                    console.log({ uid })
-                  }}>
-                  <h4 className='question-title'>{title}</h4>
-                  <span className='button'>
-                    {expanded && id === uid ? (
-                      <i class='fa fa-minus-circle'></i>
-                    ) : (
-                      <i class='fa fa-plus-circle'></i>
-                    )}
-                  </span>
-                </header>
-                {expanded && id === uid && <p>{body}</p>}
-              </article>
+             <Accordion key={id} title={title} body={body} />
             ))}
           </div>
         </section>

@@ -39,9 +39,9 @@ export const Subscribe = () => {
                     <div className='overlay rounded-right'></div>
                     <div className='account-testimonial'>
                       <h4 className='text-white mb-4'>Scripture of the Day!</h4>
-                      <p className='lead text-white'>
+                      <div className='lead text-white'>
                         <div id='dailyVersesWrapper'></div>
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </div>
