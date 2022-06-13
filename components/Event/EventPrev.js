@@ -28,10 +28,9 @@ export const EventPrev = () => {
                 paddingRight: "15px",
               }}
             >
-              1st Annual Men's Conference{" "}
+              2nd Annual Hunger Initiative{" "}
               <p style={{ paddingTop: '8px' }}>
-                December 18th, 2021 - 6:00pm at Hyatt Hyde Park 5225 S. Harper
-                St. Chicago, IL 60615
+                Date, time and location TBA
               </p>{" "}
             </Card.Title>
             <Button

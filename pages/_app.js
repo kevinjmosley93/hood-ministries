@@ -2,14 +2,24 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Head from 'next/head'
 import { Footer } from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
+import { useRouter } from 'next/router'
 import 'font-awesome/css/font-awesome.min.css'
 import '../styles/globals.css'
 import '../styles/footer.css'
 import '../styles/blog.css'
 import '../styles/subscribe.css'
 import '../styles/services.css'
+import { useEffect } from 'react'
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter()
+
+  // console.log('router', router)
+
+  useEffect(() => {
+   if (router.pathname === '/_error') return router.push('/')
+  }, [])
+  
   return (
     <>
       <Head>

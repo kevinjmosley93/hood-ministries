@@ -60,7 +60,7 @@ const donationPolicy = () => {
           RECEIPT FOR YOUR ACCOUNTANT TO REVIEW! 
         </p>
         <a
-          class='btn d-block'
+          className='btn d-block'
           target='_blank'
           href='https://www.paypal.com/donate?hosted_button_id=GE7NQ7TWYQETU'
           rel='noopener noreferrer'>
