@@ -45,7 +45,7 @@ export const Footer = () => {
             <h1 id='footer__heading' className='fw-bold mb-2'>
               LOCATION
             </h1>
-            <div>
+            <div className='mb-3'>
               {' '}
               <div>Helping Others Obtain Destiny LLC</div>
               <div>
