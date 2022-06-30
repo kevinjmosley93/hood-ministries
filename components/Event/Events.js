@@ -94,7 +94,7 @@ export const Events = () => {
                     2nd Annual Hunger Initiative
                   </Card.Title>
                   <Card.Subtitle className="mb-1 text-muted">
-                    Date, time and location TBA
+                  July 1st 2022, 11am CST location TBA
                   </Card.Subtitle>
                   <Card.Text className="mb-auto">
                     {" "}

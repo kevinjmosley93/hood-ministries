@@ -30,7 +30,7 @@ export const EventPrev = () => {
             >
               2nd Annual Hunger Initiative{" "}
               <p style={{ paddingTop: '8px' }}>
-                Date, time and location TBA
+                July 1st 2022, 11am CST location TBA
               </p>{" "}
             </Card.Title>
             <Button
